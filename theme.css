@@ -1,0 +1,120 @@
+/* Shared semantic palette. Appearance follows the system; dark preserves the original ink palette. */
+:root {
+  color-scheme: light;
+  --bg: #f5f5f7;
+  --bg-elevated: #ffffff;
+  --surface-solid: #ffffff;
+  --surface-hover: #ebedf0;
+  --text: #1d1d1f;
+  --muted: #66686f;
+  --accent: #0a68c6;
+  --accent-2: #4862a6;
+  --course: #2c67b9;
+  --research: #6c5da1;
+  --work: #2a747f;
+  --workout: #3d7e5f;
+  --ops-rest: #795aa4;
+  --ops-life: #657183;
+  --ops-meals: #936927;
+  --ops-transit: #2d7b78;
+  --fun: #9f527d;
+  --fucked: #b15558;
+  --things: #546983;
+  --danger: #b54a4a;
+  --success: #377957;
+  --warn: #916720;
+  --border: #dddfe3;
+  --border-bright: #adb4bf;
+  --heat-0: #eceef2;
+  --heat-1: #dae6f8;
+  --heat-2: #acc8ee;
+  --heat-3: #699bd7;
+  --heat-4: #2c67b9;
+  --surface: color-mix(in srgb, var(--surface-solid) 88%, transparent);
+  --accent-glow: color-mix(in srgb, var(--accent) 16%, transparent);
+  --workout-dim: color-mix(in srgb, var(--workout) 14%, transparent);
+  --fun-dim: color-mix(in srgb, var(--fun) 14%, transparent);
+  --fucked-dim: color-mix(in srgb, var(--fucked) 14%, transparent);
+  --shadow: 0 8px 32px #00000029;
+  --shadow-glow: 0 0 30px color-mix(in srgb, var(--accent) 5%, transparent);
+  --ink: var(--text);
+  --line: var(--border);
+  --lime: var(--accent);
+  --panel: var(--surface-solid);
+  --shadow: 0 8px 32px #00000008;
+
+  /* Opaque paints for SVG navigation in both appearances. */
+  --dial-study: #e1e7f1;
+  --dial-study-hover: #c7d4e9;
+  --dial-work: #e1e8eb;
+  --dial-work-hover: #c6d7db;
+  --dial-move: #e3e9e8;
+  --dial-move-hover: #cbdad4;
+  --dial-life: #e9e6ef;
+  --dial-life-hover: #d8d1e4;
+  --dial-unwind: #ece5eb;
+  --dial-unwind-hover: #e1d0db;
+  --dial-tasks: #e5e7eb;
+  --dial-tasks-hover: #d0d5dc;
+}
+:root[data-theme="dark"] {
+  --bg: #0b0d12;
+  --bg-elevated: #101319;
+  --surface-solid: #151922;
+  --surface-hover: #202632;
+  --text: #edf0f7;
+  --muted: #9ba5b7;
+  --accent: #acc2fb;
+  --accent-2: #889ed1;
+  --course: #acc2fb;
+  --research: #889ed1;
+  --work: #92c6d1;
+  --workout: #9dc4b1;
+  --ops-rest: #b9acd7;
+  --ops-life: #a8b1c1;
+  --ops-meals: #d0bb98;
+  --ops-transit: #91baba;
+  --fun: #cfa8c0;
+  --fucked: #d7a0a0;
+  --things: #bbc3d5;
+  --danger: #e3a5a1;
+  --success: #9dc4b1;
+  --warn: #d0bb98;
+  --border: #292f3b;
+  --border-bright: #46536a;
+  --heat-0: #202633;
+  --heat-1: #344261;
+  --heat-2: #4f638c;
+  --heat-3: #7a91bf;
+  --heat-4: #acc2fb;
+  --surface: color-mix(in srgb, var(--surface-solid) 88%, transparent);
+  --accent-glow: color-mix(in srgb, var(--accent) 16%, transparent);
+  --workout-dim: color-mix(in srgb, var(--workout) 14%, transparent);
+  --fun-dim: color-mix(in srgb, var(--fun) 14%, transparent);
+  --fucked-dim: color-mix(in srgb, var(--fucked) 14%, transparent);
+  --shadow: 0 8px 32px #00000029;
+  --shadow-glow: 0 0 30px color-mix(in srgb, var(--accent) 5%, transparent);
+  --ink: var(--text);
+  --line: var(--border);
+  --lime: var(--accent);
+  --panel: var(--surface-solid);
+
+  /* Opaque paints for SVG navigation in both appearances. */
+  --dial-study: #1b1f29;
+  --dial-study-hover: #303748;
+  --dial-work: #182025;
+  --dial-work-hover: #2a383e;
+  --dial-move: #1a1f22;
+  --dial-move-hover: #2d3737;
+  --dial-life: #1c1d26;
+  --dial-life-hover: #33323f;
+  --dial-unwind: #1f1c23;
+  --dial-unwind-hover: #38313a;
+  --dial-tasks: #1d1f26;
+  --dial-tasks-hover: #33373f;
+}
+
+:root[data-theme="dark"] { color-scheme: dark; }
+.theme-toggle { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:38px; padding:8px 14px; border:1px solid var(--border); border-radius:999px; background:transparent; color:var(--text); font:inherit; font-size:12px; cursor:pointer; white-space:nowrap; }
+.theme-toggle:hover { background:var(--surface-hover); }
+.theme-toggle:focus-visible { outline:2px solid var(--accent); outline-offset:4px; }

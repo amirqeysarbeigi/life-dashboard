@@ -1,0 +1,36 @@
+# OAuth credentials and backups
+credentials*
+*credentials*.json
+token*
+*token*.json*
+client_secret*
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+# Private configuration and personal data
+config.yaml
+adjustments.json
+*.db
+*.db-*
+*.sqlite
+*.sqlite*
+*.thingsdatabase/
+analytics_cache*
+data/
+exports/
+# Local development and assistant history
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+.history/
+.claude/
+.codex/
+.agents/
+graphify-out/
+.DS_Store
+*.log

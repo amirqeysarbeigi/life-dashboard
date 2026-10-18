@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Amir’s personal space for time, tasks and everyday life.">
+<title>Life Dashboard — Home</title>
+<script src="/theme.js"></script><link rel="stylesheet" href="/theme.css">
+<style>
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font-family:inherit}a:focus-visible{outline:2px solid var(--accent);outline-offset:7px}h1,h2,p{margin:0}.wrap{max-width:1320px;margin:auto;padding:0 64px}.topbar{height:88px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}.brand{font-size:16px;font-weight:600;letter-spacing:-.6px}.brand span{display:inline-block;margin-right:9px;font-size:24px;vertical-align:-2px}.top-links{display:flex;gap:28px;align-items:center;font-size:12px}.hero{position:relative;display:grid;grid-template-columns:1.1fr 1fr;align-items:center;min-height:610px;gap:20px}.hero-copy{position:relative;z-index:2;padding:70px 0}.eyebrow{font-size:12px;color:var(--muted);letter-spacing:.03em;margin-bottom:30px}h1{font-size:clamp(62px,6.9vw,96px);line-height:1.01;font-weight:550;letter-spacing:-.065em}h1 span{display:block}h1 .name{color:var(--muted)}.intro{font-size:19px;line-height:1.6;color:var(--muted);margin-top:28px;max-width:340px;letter-spacing:-.35px}.actions{display:flex;align-items:center;gap:27px;flex-wrap:wrap;margin-top:35px}.primary{border-radius:999px;background:var(--text);color:var(--bg);padding:15px 24px;font-size:14px;transition:transform .2s}.primary:hover{transform:translateY(-3px)}.text-link{font-size:14px}.text-link span{display:inline-block;margin-left:7px;transition:transform .2s}.text-link:hover span{transform:translateX(5px)}.dayline{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:23px 0;color:var(--muted);font-size:12px}.time{font-variant-numeric:tabular-nums;color:var(--text);font-weight:500}.dayline .rule{height:2px;width:100px;background:var(--border);display:inline-block;vertical-align:middle;margin:0 12px;overflow:hidden}.rule i{display:block;background:var(--accent);height:100%}.spaces{padding:70px 0 65px;display:grid;grid-template-columns:1fr 2fr;gap:65px}.spaces h2{font-size:32px;font-weight:500;letter-spacing:-1.3px}.spaces-intro p{font-size:14px;color:var(--muted);margin-top:15px;line-height:1.6;max-width:190px}.space-list{display:grid;grid-template-columns:1fr 1fr;column-gap:48px}.space{padding:22px 0;border-bottom:1px solid var(--border);display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px}.space:nth-child(-n+2){padding-top:0}.space strong{font-size:20px;font-weight:500;letter-spacing:-.5px}.space small{font-size:12px;color:var(--muted);display:block;margin-top:7px}.space .arrow{font-size:23px;color:var(--muted);transition:transform .2s,color .2s}.space:hover .arrow{transform:translate(3px,-3px);color:var(--accent)}.space:hover strong{color:var(--accent)}footer{border-top:1px solid var(--border);padding:25px 0 35px;display:flex;justify-content:space-between;color:var(--muted);font-size:11px}.skip{position:absolute;top:-100px;padding:12px;background:var(--surface-solid);z-index:10}.skip:focus{top:10px}@media(min-width:1500px){.hero{min-height:680px}}@media(max-width:950px){.wrap{padding:0 30px}.hero{min-height:560px}h1{font-size:68px}.spaces{gap:35px}.space-list{gap:0 26px}}@media(max-width:640px){.wrap{padding:0 24px}.topbar{height:76px}.top-links{gap:12px}.top-links>a{display:none}.brand{font-size:14px}.hero{display:flex;flex-direction:column;gap:0;align-items:stretch}.hero-copy{padding:52px 0 0}h1{font-size:64px}.eyebrow{margin-bottom:24px}.intro{font-size:17px;margin-top:23px}.actions{gap:22px;margin-top:26px}.dayline{font-size:11px;flex-wrap:wrap;gap:12px;padding:18px 0}.dayline .rule{width:50px;margin:0 6px}.spaces{padding:40px 0;grid-template-columns:1fr;gap:32px}.spaces-intro p{max-width:none;margin-top:10px}.spaces h2{font-size:28px}.space-list{column-gap:24px}.space strong{font-size:17px}.space small{font-size:11px;line-height:1.5}.space .arrow{font-size:19px}footer{gap:20px;line-height:1.5}.theme-toggle{font-size:11px;padding:8px 11px}}@media(prefers-reduced-motion:reduce){*,*:before{transition:none!important}}
+/* Editorial proportions and fine rules, inspired by the nominee references. */
+.hero:after{content:'';position:absolute;top:38px;bottom:38px;left:54%;width:1px;background:linear-gradient(transparent,var(--border),transparent);pointer-events:none}
+h1 .name{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:400;letter-spacing:-.06em;color:var(--text)}
+.hero-copy{padding-right:24px}.section-index{display:block;font:10px ui-monospace,monospace;color:var(--muted);margin-bottom:18px;letter-spacing:.04em}
+.space-list{counter-reset:space}.space{position:relative;counter-increment:space;padding-left:30px;transition:padding .3s,background .3s}.space:before{content:'0' counter(space);position:absolute;left:0;top:25px;font:9px ui-monospace,monospace;color:var(--muted)}.space:nth-child(-n+2):before{top:4px}.space:after{content:'';position:absolute;bottom:-1px;left:0;width:100%;height:1px;background:var(--text);transform:scaleX(0);transform-origin:left;transition:transform .4s}.space:hover:after,.space:focus-visible:after{transform:scaleX(1)}.space:hover strong{color:var(--text)}.space strong{display:inline-block;transition:transform .3s}.space:hover strong{transform:translateX(4px)}.primary{background:transparent;color:var(--text);border:1px solid var(--border-bright)}.primary:hover{background:var(--text);color:var(--bg)}
+@media(max-width:640px){.hero:after{display:none}.hero-copy{padding-right:0}.space{padding-left:23px}.space:before{font-size:8px}.section-index{margin-bottom:12px}}
+@media(prefers-reduced-motion:reduce){.space,.space:after,.space strong{transition:none}}
+
+#pointer-field{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}.wrap{position:relative;z-index:1}
+.day-compass{position:relative;width:100%;max-width:470px;aspect-ratio:1;justify-self:center;isolation:isolate}
+.day-dial{display:block;width:100%;height:100%;overflow:visible}
+.dial-sector{outline:none}.dial-sector path{fill:var(--dial-fill);stroke:color-mix(in srgb,var(--sector) 26%,var(--border));stroke-width:.6;transform-origin:200px 200px;transition:fill .25s,transform .35s,stroke .25s}
+.dial-sector text{font:500 12px -apple-system,BlinkMacSystemFont,sans-serif;fill:var(--text);pointer-events:none}
+.dial-sector:hover path,.dial-sector:focus-visible path{fill:var(--dial-hover);stroke:var(--sector);transform:scale(1.025);stroke-width:1.5}
+.dial-center{position:absolute;inset:30%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;pointer-events:none;gap:12px}
+.dial-kicker{font:9px ui-monospace,monospace;letter-spacing:.13em;color:var(--muted)}
+#dial-title{font:italic 46px/1 Georgia,serif;letter-spacing:-2px}
+#dial-detail{font-size:11px;line-height:1.5;color:var(--muted);min-height:33px}
+.dial-caption{text-align:center;font:10px ui-monospace,monospace;color:var(--muted);letter-spacing:.03em;margin-top:-4px}
+@media(max-width:640px){.day-compass{margin:28px auto 32px;max-width:360px}#dial-title{font-size:36px}.dial-kicker{font-size:7px}#dial-detail{font-size:10px}.dial-center{gap:8px}}
+@media(prefers-reduced-motion:reduce){.dial-sector path{transition:none}#pointer-field{display:none}}
+@media(hover:none),(pointer:coarse){#pointer-field{display:none}}
+</style>
+</head>
+<body>
+<canvas id="pointer-field" aria-hidden="true"></canvas>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="topbar"><a href="/" class="brand"><span aria-hidden="true">◈</span>Life Dashboard</a><nav class="top-links" aria-label="Home navigation"><a href="/dashboard#insights">My insights ↗</a></nav></header>
+<main id="main">
+<section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><p class="eyebrow" id="today-label">A moment for yourself</p><h1 id="hero-title"><span id="greeting">Welcome back.</span><span class="name">Amir.</span></h1><p class="intro">A little perspective on your day.<br>At your own pace.</p><div class="actions"><a class="primary" href="/dashboard#summary">My overview &nbsp; ↗</a><a class="text-link" href="/dashboard#things">Today’s tasks <span>→</span></a></div></div><div class="day-compass"><svg class="day-dial" viewBox="0 0 400 400" role="group" aria-label="Choose a dashboard area"><a href="/dashboard#education" class="dial-sector" style="--sector:var(--course);--dial-fill:var(--dial-study);--dial-hover:var(--dial-study-hover)" data-label="Study" data-detail="Study & research" aria-label="Open Study: Study & research"><path d="M121.00565304531887,44.96486479122399 A174,174 0 0 1 278.99434695468113,44.96486479122399 L255.84083146796428,90.40619752483074 A123,123 0 0 0 144.15916853203575,90.40619752483074 Z"/><text x="200.0" y="52.0" text-anchor="middle" dominant-baseline="middle">Study</text></a><a href="/dashboard#work" class="dial-sector" style="--sector:var(--work);--dial-fill:var(--dial-work);--dial-hover:var(--dial-work-hover)" data-label="Work" data-detail="Sessions & workload" aria-label="Open Work: Sessions & workload"><path d="M294.7671920926147,54.0713211774962 A174,174 0 0 1 373.76153904729586,190.8935436137278 L322.8314327748126,193.5626773821179 A123,123 0 0 0 266.99060130684836,96.84352014271285 Z"/><text x="328.17175976009696" y="126.00000000000001" text-anchor="middle" dominant-baseline="middle">Work</text></a><a href="/dashboard#growth" class="dial-sector" style="--sector:var(--workout);--dial-fill:var(--dial-move);--dial-hover:var(--dial-move-hover)" data-label="Move" data-detail="Movement & workouts" aria-label="Open Move: Movement & workouts"><path d="M373.76153904729586,209.1064563862722 A174,174 0 0 1 294.7671920926147,345.9286788225038 L266.99060130684836,303.15647985728714 A123,123 0 0 0 322.8314327748126,206.4373226178821 Z"/><text x="328.17175976009696" y="274.0" text-anchor="middle" dominant-baseline="middle">Move</text></a><a href="/dashboard#operations" class="dial-sector" style="--sector:var(--ops-rest);--dial-fill:var(--dial-life);--dial-hover:var(--dial-life-hover)" data-label="Life" data-detail="Sleep, meals & routines" aria-label="Open Life: Sleep, meals & routines"><path d="M278.99434695468113,355.035135208776 A174,174 0 0 1 121.00565304531887,355.035135208776 L144.15916853203575,309.59380247516924 A123,123 0 0 0 255.84083146796428,309.59380247516924 Z"/><text x="200.0" y="348.0" text-anchor="middle" dominant-baseline="middle">Life</text></a><a href="/dashboard#fun" class="dial-sector" style="--sector:var(--fun);--dial-fill:var(--dial-unwind);--dial-hover:var(--dial-unwind-hover)" data-label="Unwind" data-detail="Leisure & recharge" aria-label="Open Unwind: Leisure & recharge"><path d="M105.23280790738526,345.9286788225038 A174,174 0 0 1 26.238460952704145,209.1064563862722 L77.16856722518742,206.4373226178821 A123,123 0 0 0 133.00939869315164,303.15647985728714 Z"/><text x="71.82824023990307" y="274.0" text-anchor="middle" dominant-baseline="middle">Unwind</text></a><a href="/dashboard#things" class="dial-sector" style="--sector:var(--things);--dial-fill:var(--dial-tasks);--dial-hover:var(--dial-tasks-hover)" data-label="Tasks" data-detail="One thing at a time" aria-label="Open Tasks: One thing at a time"><path d="M26.238460952704145,190.89354361372781 A174,174 0 0 1 105.23280790738531,54.0713211774962 L133.0093986931517,96.84352014271283 A123,123 0 0 0 77.16856722518742,193.56267738211795 Z"/><text x="71.8282402399031" y="125.99999999999999" text-anchor="middle" dominant-baseline="middle">Tasks</text></a></svg><div class="dial-center" aria-hidden="true"><span class="dial-kicker">YOUR EVERYDAY</span><span id="dial-title">My day.</span><span id="dial-detail">Choose a space</span></div><p class="dial-caption">Explore the dial · open a space ↗</p></div></section>
+<div class="dayline"><span><time class="time" id="clock">--:--</time> &nbsp; <span id="clock-zone">Local time</span></span><span><span id="day-progress"></span><span class="rule" aria-hidden="true"><i id="day-fill"></i></span><span id="time-left"></span></span></div>
+<section class="spaces" aria-labelledby="spaces-title"><div class="spaces-intro"><span class="section-index">02 / The everyday</span><h2 id="spaces-title">My spaces</h2><p>The different parts of life.<br>Room for all of them.</p></div><div class="space-list">
+<a class="space" href="/dashboard#education"><div><strong>AI Education</strong><small>Study & research</small></div><span class="arrow" aria-hidden="true">↗</span></a>
+<a class="space" href="/dashboard#work"><div><strong>Work</strong><small>Sessions & workload</small></div><span class="arrow" aria-hidden="true">↗</span></a>
+<a class="space" href="/dashboard#growth"><div><strong>Growth</strong><small>Movement & workouts</small></div><span class="arrow" aria-hidden="true">↗</span></a>
+<a class="space" href="/dashboard#operations"><div><strong>Operations</strong><small>Sleep, meals & daily life</small></div><span class="arrow" aria-hidden="true">↗</span></a>
+<a class="space" href="/dashboard#fun"><div><strong>Fun</strong><small>Leisure & recharge</small></div><span class="arrow" aria-hidden="true">↗</span></a>
+<a class="space" href="/dashboard#fucked"><div><strong>Fucked</strong><small>Time that slipped away</small></div><span class="arrow" aria-hidden="true">↗</span></a>
+</div></section>
+</main><footer><span>My time. My pace.</span><a href="/dashboard">Resume dashboard ↗</a></footer>
+</div>
+<script>
+function updateClock(){
+ const now=new Date(),h=now.getHours(),minutes=h*60+now.getMinutes();
+ document.getElementById('greeting').textContent=h<5?'Still up.':h<12?'Good morning.':h<18?'Good afternoon.':'Good evening.';
+ document.getElementById('today-label').textContent=now.toLocaleDateString(undefined,{weekday:'long',month:'long',day:'numeric'});
+ const clock=document.getElementById('clock');clock.textContent=now.toLocaleTimeString(undefined,{hour:'2-digit',minute:'2-digit',hour12:false});clock.dateTime=now.toISOString();
+ document.getElementById('clock-zone').textContent=Intl.DateTimeFormat().resolvedOptions().timeZone.split('/').pop().replaceAll('_',' ');
+ document.getElementById('day-progress').textContent=Math.floor(minutes/1440*100)+'% of today';
+ document.getElementById('day-fill').style.width=(minutes/1440*100)+'%';
+ document.getElementById('time-left').textContent=Math.floor((1440-minutes)/60)+'h '+(1440-minutes)%60+'m left';
+}
+updateClock();setInterval(updateClock,30000);
+// The dial is real navigation; hover and keyboard focus preview each destination.
+const sectors=[...document.querySelectorAll('.dial-sector')];
+function previewSector(sector){document.getElementById('dial-title').textContent=sector?sector.dataset.label:'My day.';document.getElementById('dial-detail').textContent=sector?sector.dataset.detail:'Choose a space';}
+sectors.forEach(sector=>{
+ sector.addEventListener('pointerenter',()=>previewSector(sector));
+ sector.addEventListener('focus',()=>previewSector(sector));
+ sector.addEventListener('pointerleave',()=>previewSector(document.activeElement.closest?.('.dial-sector')));
+ sector.addEventListener('blur',()=>previewSector(null));
+});
+// Nearby paper-like dots bend away from the pointer and settle back into place.
+// The animation stops as soon as the field settles, and pauses off-screen.
+const motion=matchMedia('(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)');
+const field=document.getElementById('pointer-field'),ctx=field.getContext('2d');
+let dots=[],pointer=null,frame=0,fieldWidth=0,fieldHeight=0;
+function paintField(){
+ frame=0;if(!ctx||!motion.matches||document.hidden)return;
+ ctx.clearRect(0,0,fieldWidth,fieldHeight);
+ ctx.fillStyle=getComputedStyle(document.documentElement).getPropertyValue('--muted').trim();
+ let unsettled=false;
+ for(const dot of dots){
+  let tx=0,ty=0,near=0;
+  if(pointer){const dx=dot.x-pointer.x,dy=dot.y-pointer.y,d=Math.hypot(dx,dy);if(d<105){near=1-d/105;const force=near*near*22;tx=dx/(d||1)*force;ty=dy/(d||1)*force;}}
+  dot.dx+=(tx-dot.dx)*.16;dot.dy+=(ty-dot.dy)*.16;
+  if(Math.abs(tx-dot.dx)+Math.abs(ty-dot.dy)>.08)unsettled=true;
+  ctx.globalAlpha=.16+near*.24;ctx.beginPath();ctx.arc(dot.x+dot.dx,dot.y+dot.dy,.7+near*.35,0,Math.PI*2);ctx.fill();
+ }
+ ctx.globalAlpha=1;if(unsettled)frame=requestAnimationFrame(paintField);
+}
+function queuePaint(){if(!frame)frame=requestAnimationFrame(paintField);}
+function resizeField(){cancelAnimationFrame(frame);frame=0;pointer=null;fieldWidth=innerWidth;fieldHeight=innerHeight;const ratio=Math.min(devicePixelRatio||1,2);field.width=fieldWidth*ratio;field.height=fieldHeight*ratio;if(!ctx)return;ctx.setTransform(ratio,0,0,ratio,0,0);dots=[];for(let y=16;y<fieldHeight;y+=32)for(let x=16;x<fieldWidth;x+=32)dots.push({x,y,dx:0,dy:0});if(motion.matches)queuePaint();}
+function releasePointer(){pointer=null;queuePaint();}
+document.addEventListener('pointermove',event=>{if(!motion.matches)return;pointer={x:event.clientX,y:event.clientY};queuePaint();},{passive:true});
+document.documentElement.addEventListener('pointerleave',releasePointer);window.addEventListener('blur',releasePointer);window.addEventListener('resize',resizeField);motion.addEventListener('change',resizeField);document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelAnimationFrame(frame);frame=0;pointer=null;}else queuePaint();});
+resizeField();
+</script>
+</body></html>

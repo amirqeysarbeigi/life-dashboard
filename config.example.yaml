@@ -1,0 +1,29 @@
+# Example settings only. Copy to config.yaml and customize locally.
+goal_hours: 10000
+target_date: '2030-12-31'
+calendars: [courses, research]
+cache_ttl_minutes: 10
+history_years: 2
+work:
+  calendar: work
+operations:
+  calendar: operations
+  sleep_timezone: UTC
+growth:
+  calendar: growth
+  workout_keywords: [gym, workout]
+  weekly_goal_min: 3
+  weekly_goal_max: 6
+fun:
+  calendar: fun
+  weekly_goal_min: 5
+  weekly_goal_max: 15
+fucked:
+  calendar: wasted-time
+  weekly_cap: 7
+  daily_cap: 1.5
+things:
+  enabled: false
+  db_path: null
+  areas: []
+  tags: []
